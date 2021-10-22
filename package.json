@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "main": "server/server.js",
   "license": "MIT",
+  "engines": {
+    "node": "14.15.1",
+    "npm": "7.6.2"
+  },
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1"
