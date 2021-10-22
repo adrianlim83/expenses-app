@@ -1,0 +1,23 @@
+.expenses-list {
+  margin: 5rem;
+}
+
+.expenses-list .headers-item-list, .expenses-list .expenses-item-list {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto;
+  margin: 0.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px dotted;
+}
+
+@media (max-width:1025px) {
+  .expenses-list .headers-item-list, .expenses-list .expenses-item-list {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr;
+    border-bottom: 1px dotted;
+    padding-bottom: 1rem;
+    margin: 1rem;
+  }
+}
