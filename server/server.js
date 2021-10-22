@@ -4,6 +4,9 @@ const cors = require('cors');
 app.use(cors());
 const port = 5000;
 
+const path = require('path');
+app.use(express.static(path.join(__dirname, '../client/build')));
+
 const expenses = [
   {id: 1, description: 'Groceries on 5 Aug', price: 368.46},
   {id: 2, description: 'Groceries on 19 Aug', price: 480.85},
