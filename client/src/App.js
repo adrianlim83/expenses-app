@@ -13,7 +13,7 @@ function App() {
   // state changes
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch("http://localhost:5000/expenses/list");
+      const response = await fetch("/expenses/list");
       const data = await response.json();
       setExpenses(data);
     };
